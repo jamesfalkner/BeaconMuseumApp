@@ -277,7 +277,7 @@ doLogin(null, function() {
 $.index.open();
 
 // For those device-challenged folks
-if (ENV_DEV) {
+if (ENV_DEV || !beacons.hasBeaconSupport()) {
 
     var button = Ti.UI.createButton({
         bottom : '10dp',
