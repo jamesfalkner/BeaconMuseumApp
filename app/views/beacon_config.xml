@@ -1,0 +1,15 @@
+<Alloy>
+	<Window class="container">
+		<View id="network_squish">
+			<View id="network_pad">
+				<Label id="analytics_label" textid="ANALYTICS_HOST"/>
+				<TextField keyboardType="Titanium.UI.KEYBOARD_URL" id="analytics_host" onReturn="changeAnalyticsHost" />
+			</View>
+		</View>
+		<Label id="event_label" />
+		<TextArea editable="false" id="log"/>
+		<View id="close_pad">
+			<Button id="close" titleid="CLOSE" onClick="closeWin"/>
+		</View>
+	</Window>
+</Alloy>

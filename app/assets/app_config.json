@@ -1,0 +1,15 @@
+{
+	"GALLERY_DDL_HOST" : "http://192.168.1.220:8080",
+	"GALLERY_DDL_ENDPOINT" : "/skinny-web.skinny/get-skinny-ddl-records",
+	"GALLERY_LIST_ID" : "11727",
+	"ANALYTICS_HOST" : "http://192.168.1.220:8080",
+	"ANALYTICS_ENDPOINT_GALLERY_VISITS" : "/BeaconHeat-portlet.galleryvisit/register-visits",
+	"ANALYTICS_ENDPOINT_EXHIBIT_VISITS" : "/BeaconHeat-portlet.exhibitvisit/register-exhibit-pings",
+	"ANALYTICS_REPORT_FREQ": 5000,
+	"CONTENT_URL" : "/documents/%1$s/%2$s",
+    "SINGLE_VALUES" : [],
+    "INT_VALUES" : ["major", "minor"],
+    "MULTI_VALUES" : [],
+    "DOCLIB_VALUES" : ["pic", "thumbnail", "artist_pic", "audio"],
+    "BOOLEAN_VALUES" : []
+}

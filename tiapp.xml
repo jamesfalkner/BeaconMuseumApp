@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>com.liferay.museumdemo</id>
+    <name>BeaconMuseumApp</name>
+    <version>1.0</version>
+    <publisher>James falkner</publisher>
+    <url>http://liferay.com</url>
+    <description>An awesome app</description>
+    <copyright>2015 by Liferay, Inc.</copyright>
+    <icon>appicon.png</icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>true</statusbar-hidden>
+    <fullscreen>true</fullscreen>
+    <navbar-hidden>true</navbar-hidden>
+    <analytics>false</analytics>
+    <guid>92715b2b-da0f-483b-9be7-456fb9175ec2</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <ios>
+        <plist>
+            <dict>
+                <key>UIBackgroundModes</key>
+                <array>
+                    <string>location</string>
+                    <string>bluetooth-central</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+                <key>NSLocationUsageDescription</key>
+                <string>
+				      This app requests your location for generating dynamic iBeacon notifications.
+				  </string>
+                <key>NSLocationAlwaysUsageDescription</key>
+                <string>
+				      This app requests your location for generating dynamic iBeacon notifications.
+				  </string>
+                <key>NSLocationWhenInUseUsageDescription</key>
+                <string>
+				      This app requests your location for generating dynamic iBeacon notifications.
+				  </string>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest package="com.liferay.museumdemo">
+            <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="21"/>
+            <uses-permission android:name="android.permission.BLUETOOTH"/>
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+            <application>
+                <service android:enabled="true" android:exported="true"
+                    android:isolatedProcess="false"
+                    android:label="iBeacon" android:name="com.radiusnetworks.ibeacon.service.IBeaconService"/>
+                <service android:enabled="true" android:name="com.radiusnetworks.ibeacon.IBeaconIntentProcessor">
+                    <meta-data android:name="background" android:value="true"/>
+                    <intent-filter android:priority="1">
+                        <action android:name="com.liferay.museumdemo.DID_RANGING"/>
+                        <action android:name="com.liferay.museumdemo.DID_MONITORING"/>
+                    </intent-filter>
+                </service>
+            </application>
+        </manifest>
+    </android>
+    <modules>
+        <module platform="android">com.liferay.beacons</module>
+        <module platform="commonjs" version="0.6.3.1">liferay-connector</module>
+        <module platform="iphone" version="0.9.3">org.beuckman.tibeacons</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+        <target device="ipad">true</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">false</target>
+    </deployment-targets>
+    <sdk-version>3.5.0.GA</sdk-version>
+    <plugins>
+        <plugin version="1.0">ti.alloy</plugin>
+    </plugins>
+</ti:app>

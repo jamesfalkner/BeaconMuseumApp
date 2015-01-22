@@ -1,0 +1,66 @@
+
+".container": {
+	layout: 'vertical',
+	backgroundColor: 'white'
+}
+
+"#analytics_label": {
+	font: {
+		fontSize: '14dp'
+	}
+}
+
+"#analytics_host": {
+	color: 'black',
+	width: '60%',
+	height: '18dp',
+	font: {
+		fontSize: '14dp',
+		fontWeight: 'bold'
+	},
+    borderStyle: Titanium.UI.INPUT_BORDERSTYLE_BEZEL,
+
+	left: '15dp'
+}
+
+"#network_squish": {
+	height: '10%',
+	width: Ti.UI.FILL
+}
+
+"#network_pad": {
+	layout: 'horizontal',
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+}
+
+"#event_label": {
+	height: '5%',
+	width: Ti.UI.FILL,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	verticalAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_CENTER,
+	font: {
+		fontSize: '14dp',
+		fontWeight: 'bold'
+	},
+	opacity: 0
+}
+
+"#log": {
+	height: '75%',
+	width: '90%',
+	left: '5%',
+	backgroundColor: '#DDDDDD',
+	color: 'black',
+	font: {
+		fontFamily: 'monospace'
+	},
+	  borderWidth: 2,
+	  borderColor: '#bbb',
+	  borderRadius: 5
+}
+
+"#close_pad": {
+	height: '10%',
+	width: Ti.UI.FILL
+}

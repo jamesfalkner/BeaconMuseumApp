@@ -1,0 +1,11 @@
+"Window": {
+	left: 0,
+	top: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: 'black',
+	navBarHidden: true,
+	tabBarHidden: true,
+	fullscreen: true,
+	orientationModes: [Titanium.UI.PORTRAIT, Titanium.UI.UPSIDE_PORTRAIT]
+}

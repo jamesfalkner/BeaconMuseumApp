@@ -1,0 +1,59 @@
+
+".container": {}
+
+"#background": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL
+}
+
+"#skip": {
+	color: "#FFCE00",
+	top: '20dp',
+	right: '10dp',
+	font: {
+		fontSize: '18dp'
+	},
+	opacity: 0
+}
+
+".field": {
+	font: {
+		fontSize: '20dp'
+	},
+	height: '40dp',
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	width: '80%',
+	opacity: 0
+}
+
+"#fieldcontainer": {
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	layout: 'vertical',
+	top: '20%'
+}
+
+"#welcome": {
+	color: "#FFCE00",
+	font: {
+		fontSize: '25dp'
+	},
+	opacity: 0
+}
+
+"#email": {
+	top: '20dp'
+}
+
+"#password": {
+	top: '10dp'
+}
+
+"#loginButton": {
+	color: "#FFCE00",
+	top: '10dp',
+	font: {
+		fontSize: '20dp'
+	},
+	opacity: 0
+}

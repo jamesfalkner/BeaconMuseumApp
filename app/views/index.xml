@@ -1,0 +1,12 @@
+<Alloy>
+	<Window class="container" onLongpress="resetConfig">
+		<ImageView id="background" />
+		<View id="titlecontainer">
+			<View id="titlepad">
+				<Label id="title" textid="WELCOME"/>
+				<Label id="subtitle"/>
+			</View>
+		</View>
+		<ImageView id="config" onClick="config" />
+	</Window>
+</Alloy>

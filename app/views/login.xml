@@ -1,0 +1,12 @@
+<Alloy>
+	<Window class="container">
+		<ImageView id="background" image="/images/login-bg.jpg" />
+		<Button id="skip" titleid="SKIP" onClick="skipLogin" />
+		<View id="fieldcontainer">
+			<Label id="welcome" textid="WELCOME" />
+			<TextField class="field" id="email" hintText="E-Mail" onChange="saveEmail"/>
+			<TextField class="field" id="password" hintText="Password" passwordMask="true"/>
+			<Button id="loginButton" titleid="LOGIN" onClick="login" />
+		</View>
+	</Window>
+</Alloy>

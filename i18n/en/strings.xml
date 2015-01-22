@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+  <string name="WELCOME">Liferay Galleries</string>
+  <string name="GEO_PERMISSION_PURPOSE">This app requests your location for generating dynamic iBeacon notifications</string>
+  <string name="ERR_RETRIES">Cannot load gallery data. Ensure you have a network connection and try again.</string>
+  <string name="LOAD_ERROR" formatted="false">Error loading gallery data: %s</string>
+  <string name="SEARCHING_FOR" formatted="false">Searching for %d galleries...</string>
+  <string name="CLOSE">Close</string>
+  <string name="LOGIN">Login</string>
+  <string name="BAD_LOGIN">Incorrect email address or password. Try again!</string>
+  <string name="SKIP">Skip</string>
+  <string name="ANALYTICS_HOST">Analytics Host</string>
+  <string name="INVALID_HOST">Invalid hostname. Hosts should be like http[s]://host.com:port, for example http://localhost:8080</string>
+  <string name="NO_BLUETOOTH">Your device either does not support Bluetooth LE or Bluetooth is switched off. Please enable Bluetooth and try again!</string>
+</resources>
