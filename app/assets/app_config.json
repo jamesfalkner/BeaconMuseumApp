@@ -1,8 +1,8 @@
 {
-	"GALLERY_DDL_HOST" : "http://192.168.1.220:8080",
+	"GALLERY_DDL_HOST" : "https://training-XXXXX.liferay.com",
 	"GALLERY_DDL_ENDPOINT" : "/skinny-web.skinny/get-skinny-ddl-records",
-	"GALLERY_LIST_ID" : "11727",
-	"ANALYTICS_HOST" : "http://192.168.1.220:8080",
+	"GALLERY_LIST_ID" : "XXXXX",
+	"ANALYTICS_HOST" : "http://training-XXXXX.liferay.com",
 	"ANALYTICS_ENDPOINT_GALLERY_VISITS" : "/BeaconHeat-portlet.galleryvisit/register-visits",
 	"ANALYTICS_ENDPOINT_EXHIBIT_VISITS" : "/BeaconHeat-portlet.exhibitvisit/register-exhibit-pings",
 	"ANALYTICS_REPORT_FREQ": 5000,
