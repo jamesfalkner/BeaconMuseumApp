@@ -88,7 +88,7 @@ function handleProximityEvent(e) {
 
 function getExhibitByBeacon(uuid, major, minor) {
 
-    if (!beaconData.currentGallery || beaconData.currentGallery.proximity_uuid != uuid ||
+    if (!beaconData.currentGallery || beaconData.currentGallery.proximity_uuid.toLowerCase() != uuid.toLowerCase() ||
             beaconData.currentGallery.major != major) {
         return null;
     }
