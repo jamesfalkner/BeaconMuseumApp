@@ -176,7 +176,7 @@ function reportStatus(session, visibility) {
 
     session.invoke(invoker_obj, function(err, res) {
         if (err) {
-            ß(err);
+            console.log(err);
         }
     });
 
