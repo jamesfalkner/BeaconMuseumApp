@@ -232,7 +232,7 @@ function triggerGalleryExit(gallery) {
 function triggerExhibit(exhibit) {
 
 /*
-    // uncomment to enable global speed limit
+    // WORKSHOP: uncomment to enable global speed limit
     if ((new Date().getTime() - beaconData.lastGlobalTrigger) < 30000) {
         // too fast
         return;

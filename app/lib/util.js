@@ -105,26 +105,29 @@ function loadDDL(o, tries) {
 
     o.session.invoke(invoke_obj, function(err, records) {
         if (err) {
+	    	console.log("err: " + tries + ": " + JSON.stringify(err));
             if (tries < 3) {
                 tries++;
                 exports.loadDDL(o, tries);
                 return;
             } else {
                 if (o.error) {
-                    o.error(err.message);
+                    o.error(err.error.message+ ": " + err.body.message);
                 }
             }
         } else {
             var resArray = [];
+            if (Array.isArray(records)) {
 
-            records.forEach(function(el) {
-                if (el.dynamicElements) {
-                    resArray.push(el.dynamicElements);
-                }
-            });
+	            records.forEach(function(el) {
+	                if (el.dynamicElements) {
+	                    resArray.push(el.dynamicElements);
+	                }
+	            });
+            }
             if (resArray === null) {
                 if (o.error) {
-                    o.error(String.format(L('LOAD_ERROR'), "unknown"));
+                    o.error(String.format(L('LOAD_ERROR'), JSON.stringify(records)));
                 }
             } else {
                 if (o.success) {
