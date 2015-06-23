@@ -48,7 +48,7 @@ function handleRangeEvent(e) {
 
     e.beacons.forEach(function(rangedBeacon) {
 
-        var exhibit = getExhibitByBeacon(e.uuid, rangedBeacon.major, rangedBeacon.minor);
+        var exhibit = getExhibitByBeacon(rangedBeacon.uuid, rangedBeacon.major, rangedBeacon.minor);
         if (exhibit === null) {
             // just record the beacon, not trigger any exhibit
             var generatedTitle = 'MARKER/' + rangedBeacon.minor;
