@@ -59,7 +59,7 @@
   <android 
     xmlns:android="http://schemas.android.com/apk/res/android">
     <manifest package="com.liferay.museumdemo">
-      <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="21"/>
+      <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="22"/>
       <uses-permission android:name="android.permission.BLUETOOTH"/>
       <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
       <application>
